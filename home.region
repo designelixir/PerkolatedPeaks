@@ -19,23 +19,32 @@
        <div class="scene-container">
         <div class="mountain-layer flex-end-center">
             <div class="hill-layer flex-start-start">
-                <img src="assets/lodgepole.svg" style='height: 45vh; position: absolute; bottom: 51vh; left: 7vh; '/>
-                <div class="pine-layer">
-                    <img src="assets/lodgepole.svg" style='height: 100%; margin-left: -5vw;'/>
+                <div class="pine-layer-1 flex-end-start">
+                    <img src="assets/lodgepole.svg" style='height: 90%; margin-left: -2.5vw; '/>
                 </div>
-                <div style=" width: 10vw; position: absolute; bottom: 52vh; height: 35vh; left: 10vw;"><img src="assets/pine.svg" style='height: 100%; '/></div>
+                <div class="pine-layer-2 flex-end-end">
+                    <img src="assets/pine.svg" style='height: 70%; '/>
+                    <img src="assets/pine.svg" style='height: 90%; '/>
+                    <img src="assets/welcome-sign.svg" style='height: 50%; transform: translate(-15vw, 5vh);'/>
+                </div>
+                <div class="pine-layer-3 flex-end-end">
+                    <img src="assets/pine.svg" style='height: 60%; margin-left: -2.5vw; '/>
+                </div>
             </div>
         </div>
-        <div class="grass-layer">
-            <img src="assets/highway-2.svg" style="width: 70vw; margin-left: -10px; z-index: 20;"/>
-            
+        <div class="grass-layer flex-start-spacebetween">
+            <img src="assets/highway4.svg" style="width: 70vw; margin-left: -10px; z-index: 20;"/>
+            <div class="aspens flex-start-end">
+                <div class="aspen-1-layer"></div>
+                
+            </div>
         </div>
-        <div class="aspen-1-layer"></div>
+        
         
        </div>
        {squarespace.main-content}
        
-       <div class="van-layer">
+       <div class="van-layer flex-start-end">
         <div class="aspen-2-layer"></div>
 
        </div>
