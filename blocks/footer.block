@@ -1,0 +1,5 @@
+<footer class="flex-center-center flex-column">
+
+    {#  <a href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>  }
+    <squarespace:block-field id="footerSocialIcons" columns="12" style="min-width: 100px; min-height: 100px;"/>
+</footer> 

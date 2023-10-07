@@ -1,117 +1,46 @@
-
-/* CSS pre-processing by {less}. http://lesscss.org/
-***************************************************/
-
-
-
-/* General syles
-***************************************************/
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont,
-    "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
-    "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  font-size: 100%;
+@font-face {
+  font-family: 'Mintello';
+  src: url('../assets/fonts/mintello-webfont.woff2') format('woff2'),
+       url('../assets/fonts/mintello-webfont.woff') format('woff');
   font-weight: normal;
-}
-
-.site-container {
-  line-height: 1.6em;
-  color: #777;
-  max-width: 1020px;
-  padding: 6vw;
-
-  h1, h2, h3 {
-    font-weight: normal;
-    line-height: 1.2em;
-  }
-
-  a {
-    color: cornflowerblue;
-
-    &.disabled {
-      color: #ccc;
-    }
-  }
-}
-
-.site-header {
-  margin-bottom: 4vw;
-}
-
-.site-navigation { }
-
-.site-navigation-list {
-  padding: 0;
-}
-
-.site-navigation-item {
-  display: inline-block;
-  font-size: 87.5%;
-
-  & + .site-navigation-item {
-    margin-left: 1em;
-  }
-
-  a {
-    color: #111;
-    text-decoration: none;
-
-    &:hover {
-      color: #999;
-    }
-  }
-
-  &.active-link > a {
-    color: #999;
-  }
+  font-style: normal;
 
 }
 
-.site-title-heading {
+* {box-sizing: border-box; background-repeat: no-repeat;}
+body {max-width: 100vw; overflow-x: hidden;}
 
-  .site-title-link {
-    color: #111;
-    font-weight: 400;
-    text-decoration: none;
-  }
+// Global Styling 
+.flex-center-center {display: flex; align-items: center; justify-content: center;}
+.flex-column {flex-direction: column;}
+.flex-end-spacebetween {display: flex; align-items: flex-end; justify-content: space-between;}
+.flex-end-center {display: flex; align-items: flex-end; justify-content: center;}
+
+
+.container-padding {padding: 25px;}
+
+.hover:hover {cursor: pointer; transform: scale(1.03)}
+// Homepage
+
+.home-container {max-height: 100vh; height: 100%;}
+.site-header { position: absolute; top: 0; left: 0; width: 100vw; z-index: 20;}
+.logo {height: 18vh; }
+
+.scene-container {height: 100vh; width: 100vw; position: absolute; top: 0; left: 0; z-index: -1; background-color: #5ca0f2;
+  background-image: linear-gradient(180deg, #5ca0f2 0%, #f5f7f6 74%);}
+.mountain-layer { width: 100vw; height: 50vh; background-image: url('../assets/mtns.svg'); background-size: cover; background-position: center center; min-height: 375px; max-height: 550px;}
+.van-layer {width: 100vw; height: 65vh;  background-image: url('../assets/van_1.svg'); background-size: contain; background-position: 50% center; margin-top: 20vh;}
+.aspen-1-layer {width: 30vw; height: 70vh;  background-image: url('../assets/aspen-1.svg'); background-size: contain; position: absolute; top: 0; right: -5vw;}
+.aspen-2-layer {width: 35vw; height:100vh; min-width: 400px; min-height: 900px;  background-image: url('../assets/aspen-2.svg'); background-size: 100%; position: absolute; top: 0; right: -15vw;  }
+.highway-layer {width: 50vw; height: 40vh; background-image: url('../assets/highway.svg'); background-size: contain; margin-left: -50px;}
+.grass-layer {background: #528341; height: 50vh;  width: 100%;  background-image: url('../assets/foreground-2.png'); background-size: cover; background-position: center 0%; background-repeat: no-repeat; background-origin: top left} 
+.hill-layer {background-image: url('../assets/hills.svg'); max-height: 100%; width: 100vw; background-size: cover; background-position-y: bottom -10vh; }
+
+.pine-layer {width: 15vw; height: 50vh; background-image: url('../assets/pine.svg'); background-size: 100% 80%; background-position: -2vw bottom;} 
+
+@media screen and (min-width: 800px) {
+  .mountain-layer
 }
 
-.content-container { }
-
-.site-footer {
-  font-size: 75%;
-  margin-top: 4vw;
-  margin-bottom: 4vw;
-}
-
-
-
-/* Homepage
-***************************************************/
-
-body.homepage { }
-
-
-
-/* Blog list
-***************************************************/
-
-body.collection-type-blog.view-list {
-
-  .blog-list-item + .blog-list-item {
-    margin-top: 3vw;
-  }
-}
-
-
-
-/* Break grid and stack blocks on small screens
-***************************************************/
-
-@media screen and (max-width: 640px) {
-  @import 'sqs-grid-breaker';
-}
-
-
+// Footer
+footer {width: 100vw; text-align: center; }
