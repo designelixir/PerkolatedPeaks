@@ -19,15 +19,15 @@
        <div class="scene-container">
         <div class="mountain-layer flex-end-center">
             <div class="hill-layer flex-start-start">
-                <img src="assets/lodgepole.svg" style='height: 45vh; position: absolute; top: 5vh; left: 7vh; '/>
+                <img src="assets/lodgepole.svg" style='height: 45vh; position: absolute; bottom: 51vh; left: 7vh; '/>
                 <div class="pine-layer">
                     <img src="assets/lodgepole.svg" style='height: 100%; margin-left: -5vw;'/>
                 </div>
-                <div style=" width: 10vw; position: absolute; top: 15vh; height: 35vh; left: 10vw;"><img src="assets/pine.svg" style='height: 100%; '/></div>
+                <div style=" width: 10vw; position: absolute; bottom: 52vh; height: 35vh; left: 10vw;"><img src="assets/pine.svg" style='height: 100%; '/></div>
             </div>
         </div>
         <div class="grass-layer">
-            <img src="assets/highway-2.svg" style="width: 70vw; margin-left: -10px;"/>
+            <img src="assets/highway-2.svg" style="width: 70vw; margin-left: -10px; z-index: 20;"/>
             
         </div>
         <div class="aspen-1-layer"></div>
