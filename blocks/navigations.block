@@ -1,0 +1,11 @@
+<div style="height: 100vh; width: 100vw; border: 10px solid white; position: fixed; top: 0; left: 0; z-index: 200;  ">
+<header class="site-header flex-center-center container-padding">
+          <a href="/"><img src="{website.logoImageUrl}" class="logo hover" alt="Perkolated Peaks Logo"/></a>
+        </header>
+
+    <squarespace:navigation navigationId="siteNav" template="home-navigation" />
+    <div class="flex-center-center">
+    <a href="https://designelixir.studio" style="color: white; padding: 10px; font-size: 10px; opacity: 0.8; text-decoration: none; text-align: center;">Made with &hearts; by Design Elixir Studio in Twin Lakes, CO </a>
+    </div>
+
+</div>

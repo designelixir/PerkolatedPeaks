@@ -1,4 +1,9 @@
 <!doctype html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 <html>
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -6,51 +11,28 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-
+    {@|apply navigations.block}
     <div class="site-container home-container">
-
-      <header class="site-header flex-center-center container-padding">
-        <a href="/"><img src="{website.logoImageUrl}" class="logo hover" alt="Perkolated Peaks Logo"/></a>
-      </header>
-
+      {@|apply sceneContainer.block}
       <!-- cms content injection point -->
-      <main class="content-container" role="main" data-content-field="main-content">
-       
-       <div class="scene-container">
-        <div class="mountain-layer flex-end-center">
-            <div class="hill-layer flex-start-start">
-                <div class="pine-layer-1 flex-end-start">
-                    <img src="assets/lodgepole.svg" style='height: 90%; margin-left: -2.5vw; '/>
-                </div>
-                <div class="pine-layer-2 flex-end-end">
-                    <img src="assets/pine.svg" style='height: 70%; '/>
-                    <img src="assets/pine.svg" style='height: 90%; '/>
-                    <img src="assets/welcome-sign.svg" style='height: 50%; transform: translate(-15vw, 5vh);'/>
-                </div>
-                <div class="pine-layer-3 flex-end-end">
-                    <img src="assets/pine.svg" style='height: 60%; margin-left: -2.5vw; '/>
-                </div>
-            </div>
-        </div>
-        <div class="grass-layer flex-start-spacebetween">
-            <img src="assets/highway4.svg" style="width: 70vw; margin-left: -10px; z-index: 20;"/>
-            <div class="aspens flex-start-end">
-                <div class="aspen-1-layer"></div>
-                
-            </div>
+      <main id="home-content-container" role="main" data-content-field="main-content">
+        
+        <div class="ruler">
+          <div style="height: 100vh;" id="ruler1">0vh</div>
+          <div style="height: 100vh;" id="ruler2">100vh</div>
+          <div style="height: 100vh;" id="ruler3">200vh</div>
+          <div style="height: 100vh;" id="ruler4">300vh</div>
         </div>
         
-        
-       </div>
-       {squarespace.main-content}
-       
-       <div class="van-layer flex-start-end">
-        <div class="aspen-2-layer"></div>
 
-       </div>
-       <squarespace:navigation navigationId="siteNav" template="home-navigation" />
+        
+       
+        
+       
+       
+       
       </main>
-
+      
       <!--Footer with open block field -->
       {@|apply footer.block}
 

@@ -2,31 +2,15 @@
 
 .home-navigation {width: 100%; height: 120px; background-image: url('../assets/plank.svg'); background-size: contain; background-position: center center;}
 
-.home-navigation-item { margin: 0px 20px; font-family: "Mintello"; font-size: 36px; }
+.home-navigation-item {color: white; margin: 0px 20px; font-family: "Mintello"; font-size: 36px; }
 .home-navigation-item a {color: white; text-decoration: none; text-shadow: 2px 2px 5px black;}
-.home-navigation-item:hover {border-bottom: 3px solid white;}
+.home-navigation-item:hover {border-bottom: 3px solid white; cursor: pointer;}
 </style>
 
 <nav class="home-navigation flex-center-center">
   <div class="home-navigation-list flex-center-center">
-    {.repeated section items}
-
-      <div class="home-navigation-item {.section active} active-link{.end}">
-
-        <!-- collection link -->
-        {.section collection}
-          <a href="{fullUrl}">{navigationTitle}</a>
-        {.end}
-
-        <!-- external link -->
-        {.section externalLink}
-          <a href="{url}"{.section newWindow} target="_blank"{.end}>
-            {title}
-          </a>
-        {.end}
-
-      </div>
-
-    {.end}
+    <a class="home-navigation-item" href="#ruler2">About</a>
+    <a class="home-navigation-item" href="#ruler4">Menu</a>
+    <a class="home-navigation-item">Shop</a>
   </div>
 </nav>
