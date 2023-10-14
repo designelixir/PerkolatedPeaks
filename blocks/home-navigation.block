@@ -9,8 +9,8 @@
 
 <nav class="home-navigation flex-center-center">
   <div class="home-navigation-list flex-center-center">
-    <a class="home-navigation-item" href="#ruler2">About</a>
-    <a class="home-navigation-item" href="#ruler4">Menu</a>
+    <a class="home-navigation-item" href="#ruler4">About</a>
+    <a class="home-navigation-item" href="#ruler2">Menu</a>
     <a class="home-navigation-item">Shop</a>
   </div>
 </nav>
