@@ -1,23 +1,37 @@
-<nav class="site-navigation">
-  <ul class="site-navigation-list">
-    {.repeated section items}
 
-      <li class="site-navigation-item {.section active} active-link{.end}">
+<style>
 
-        <!-- collection link -->
-        {.section collection}
-          <a href="{fullUrl}">{navigationTitle}</a>
+</style>
+
+<div class="header-environment-container flex-center-center" >
+  {@|apply environment.block}
+  <div class="van-layer flex-end-center">
+    <div class="title-layer flex-center-center">
+      {.section website}
+          <h1 class="site-title-heading container-padding" data-content-field="site-title">
+            <a href="/" class="site-title-link">{collection.title}</a>
+          </h1>
         {.end}
+      </div>
+  </div>
+</div>
 
-        <!-- external link -->
-        {.section externalLink}
-          <a href="{url}"{.section newWindow} target="_blank"{.end}>
-            {title}
+<header class="nav-header container-padding flex-end-end flex-column">
+  <nav class="nav-menu flex-center-center">
+      {.repeated section items}
+          <!-- collection link -->
+          {.section collection}
+          <a href="{fullUrl}" class="site-navigation-item hover {.section active} active-link{.end}">
+            {navigationTitle}
           </a>
-        {.end}
+          {.end}
 
-      </li>
-
-    {.end}
-  </ul>
-</nav>
+          <!-- external link -->
+          {.section externalLink}
+            <a href="{url}" class="site-navigation-item" {.section newWindow} target="_blank"{.end}>
+              {title}
+            </a>
+          {.end}
+      {.end}
+  </nav>
+</header>

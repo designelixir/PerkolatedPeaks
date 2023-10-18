@@ -1,5 +1,10 @@
-<footer class="flex-center-center flex-column">
+<style>
+footer {min-height: 200px; background-image: url('')}
+#de-link {font-size: 12px;}
+</style>
 
-    {#  <a href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>  }
+<footer class="flex-center-center flex-column container-padding">
+    <a href="/"><img src="{website.logoImageUrl}" class="nav-logo hover" alt="Perkolated Peaks Logo"/></a>
     <squarespace:block-field id="footerSocialIcons" columns="12" style="min-width: 100px; min-height: 100px;"/>
+    <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
 </footer> 

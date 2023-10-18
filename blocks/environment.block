@@ -1,0 +1,33 @@
+<style>
+.environment-wrapper {z-index: -1; width: 100%; height: 100%; }
+.environment-container {height: 100%; width: 100%;background-image: url('../assets/foreground.svg'); background-size: contain; background-position: center bottom}
+.environment-mountains {width: 100%; height: 95%;  background-size: contain; }
+.twin-peaks {background-image: url('../assets/twin-peaks.svg'); background-position: 0 0%;}
+.parry-peak {background-image: url('../assets/parry-peak.svg'); background-position: 100% 0%;}
+.twin-peak-hill {width: 100%; overflow: clip; height: 80%; background-image: url('../assets/hill-left.svg'); background-size: contain; background-position: 0 100%;}
+.parry-peak-hill {width: 100%; overflow: clip; height: 100%; background-image: url('../assets/hill-right_1.svg'); background-size: contain; background-position: 100% 100%}
+.twin-peak-trees {width: 100%; height: 100%;  background-image: url('../assets/long-trees.svg'); background-size: cover; background-position: -10% 0;}
+.parry-peak-trees {width: 100%; height: 100%; background-image: url('../assets/long-trees-flipped.svg'); background-size: cover; background-position: 120% 0;}
+.van-floor {width: 100%; height: 100%; max-height: 400px; position: absolute; top: 0; left: 0; padding-top: 5%; border: 3px solid purple; z-index: 20; background-image: url('../assets/foreground.svg'); background-size: 100% 50%; background-position: 120% 105%;}
+.van-layer {width: 100%; height: 100%; max-height: 400px;  z-index: 20; border: 3px solid lime;}
+</style>
+<div class="environment-wrapper sky">
+    <div class="environment-container flex-end-end flex-column">
+        <div class="twin-peaks environment-mountains flex-end-end sky">
+            <div class="parry-peak environment-mountains flex-end-end">
+                <div class="twin-peak-hill flex-start-spacebetween">
+                    <div class="twin-peak-trees">
+                        <div class="parry-peak-hill">
+                            <div class="parry-peak-trees"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="van-floor">
+        <div class="van-layer flex-end-center">
+    </div>
+    
+</div>
