@@ -1,10 +1,12 @@
+
 <style>
-footer {min-height: 200px; background-image: url('')}
-#de-link {font-size: 12px;}
+.footer-logo {width: 200px;}
+footer {color: white;}
 </style>
 
-<footer class="flex-center-center flex-column container-padding">
-    <a href="/"><img src="{website.logoImageUrl}" class="nav-logo hover" alt="Perkolated Peaks Logo"/></a>
+<footer class="flex-center-center flex-column container-padding sky-reverse">
+     <img src="../assets/van-front.svg" onclick="window.open('/', '_self')" class="footer-logo hover container-padding" alt="Perkolated Peaks Logo"/>
     <squarespace:block-field id="footerSocialIcons" columns="12" style="min-width: 100px; min-height: 100px;"/>
+    <p style="line-height: 0;">Copyright &copy; Perkolated Peaks 2023 </p>
     <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
 </footer> 

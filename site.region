@@ -5,32 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-
-    
-      <div style="height: 300px">
-        {@|apply environment.block}
-        
-          <div class="title-layer flex-center-center">
-          {.section website}
-              <h1 class="site-title-heading container-padding" data-content-field="site-title">
-                <a href="/" class="site-title-link">{collection.title}</a>
-              </h1>
-            {.end}
-          </div>
-        
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes} sky-narrow">
+      {@|apply shortNavigation.block}
+      <div class="title-layer flex-center-center">
+      {.section website}
+          <h1 class="site-title-heading container-padding hover" data-content-field="site-title">
+            <a href="/" class="site-title-link">{collection.title}</a>
+          </h1>
+        {.end}
       </div>
-      
-        
-      
       <main class="content-container" role="main" data-content-field="main-content">
        {squarespace.main-content}
       </main>
 
       {@|apply footer.block}
-
-    
-
     <!-- combo and minify scripts when not logged in -->
     <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
 

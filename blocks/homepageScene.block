@@ -1,0 +1,73 @@
+<style>
+
+#scene-wrapper {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0;}
+#mountain-wrapper { width: 100%; height: 60vh; position: absolute; top: 0; margin-top: 2vh; left: 0; z-index: 0;}
+#twin-peaks-wrapper {width: 60%;  height: 100%; background-image: url('../assets/twin-peaks.svg'); background-size: 100%; background-position: 100% 30%;  }
+#parry-peak-wrapper {width: 60%; margin-left: -20%; height: 100%; background-image: url('../assets/parry-peak.svg'); background-size: 100%; background-position: 100% 30%;}
+
+#road-wrapper {height: 95vh; width: 100%; z-index: 1; position: absolute; top: 10vh; left: 0; }
+#trees-bg {height: 45vh; width: 100%;}
+#trees-bg div {display: flex; align-items: center; justify-content: center;}
+.tree-bg-1 {background-image: url('../assets/lodgepole.svg');background-size: contain; height: 100%; width: 30%; background-position: 0 100%}
+.tree-bg-2 {background-image: url('../assets/lodgepole.svg'); background-size: contain; height: 90%; width: 25%; background-position: 0 100%}
+.tree-bg-3 {background-image: url('../assets/lodgepole.svg'); background-size: contain; height: 70%; width: 20%; background-position: 0 100%}
+.tree-bg-4 {background-size: contain; height: 60%; width: 15%; background-position: 0 100%}
+
+#trees-overlay {width: 110vw; height: 40vh; position: absolute; top: 10vh; left: -5vw; background-size: contain; background-image: url('../assets/long-trees.svg'); background-position: 0 100% }
+#road {width: 100%; height: 45vh; position: absolute; top: 45vh; background-image: url('../assets/foreground-2.svg'); background-size: cover;}
+#welcome-sign {width: 30vw; height: 30vh; position: absolute; top: 25vh; left: -5vw;}
+
+#aspen-bg {position: absolute; right: 0vw; top: -10vh; width: 30vw; height: 70vh; max-width: 400px; transform: scaleX(-1)}
+
+
+@media screen and (max-width: 1000px) {
+#mountain-wrapper {height: 45vh; top: -4vh;}
+  #parry-peak-wrapper {background-position: 100% 15%; margin-right: -10vw}
+  #twin-peaks-wrapper {background-position: 100% 15%; margin-left: -20%;}
+  #trees-left {height: 25vh;}
+  #trees-bg {height: 30vh; top: 0vh;}
+  #trees-overlay {height: 30vh; top: 5vh;}
+  #trees-overlay img {width: 120vw;}
+  #road {height: 60vh; top: 30vh; }
+  #road img {width: 100%; height: unset; margin-top: 10vh!important; left: -10vw;}
+  #welcome-sign {top: 15vh; height: 25vh;}
+  #aspen-bg {width: 40vw; margin-right: -25vw;}
+}
+</style>
+
+
+<div id="scene-wrapper" class="sky">
+    <div id="mountain-wrapper" class="flex-end-center">
+        <div id="twin-peaks-wrapper" class="flex-end-start">
+            <img src="../assets/hill-left.svg" style="height: 70%;"/>
+        </div>
+        <div id="parry-peak-wrapper" class="flex-end-end">
+            <img src="../assets/hill-left.svg" style="height: 70%; -webkit-transform: scaleX(-1); transform: scaleX(-1);"/>
+        </div>
+    </div>
+    <div id="road-wrapper">
+        <div id="trees-bg" class="flex-end-center">
+            <div class="tree-bg-1" style="margin-left: -5%;"><img src="../assets/pine.svg" style="width: 100%"/></div>
+            <div class="tree-bg-2"><img src="../assets/pine.svg" style="width: 100%"/></div>
+            <div class="tree-bg-3"></div>
+            <div class="tree-bg-4"></div>
+            <div class="tree-bg-4"></div>
+            <div class="tree-bg-3"></div>
+            <div class="tree-bg-2"></div>
+            <div class="tree-bg-1"></div>
+        </div>
+        <div id="trees-overlay" class="flex-end-end">
+            <img src="../assets/long-trees-flipped.svg" style="width: 60%; margin-right: -10%;"/>
+        </div>
+        <div id="road">
+            <img src="../assets/highway-2.svg" style="height: 50%; margin-top: 10vh; transform: rotate(-10deg); margin-left: -5vw;"/>
+        </div>
+        <div id="welcome-sign" class="flex-start-center">
+            <img src="../assets/welcome-sign.svg" style="height: 100%"/>
+        </div>
+        <div id="aspen-bg">
+            <img src="../assets/aspen-1.svg" style="width: 100%;"/>
+        </div>
+       
+    </div>
+</div>

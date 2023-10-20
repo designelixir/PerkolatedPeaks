@@ -1,7 +1,6 @@
 <!doctype html>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
 <html>
@@ -9,28 +8,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     {squarespace-headers}
-  </head>
+  </head> 
   <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
-    {@|apply navigations.block}
+    
     <div class="site-container home-container">
-      {@|apply sceneContainer.block}
+      <squarespace:navigation navigationId="siteNav" template="homepageNav" />
+      {@|apply homepageScene.block}
       <!-- cms content injection point -->
       <main id="home-content-container" role="main" data-content-field="main-content">
         
-        <div class="ruler">
-          <div style="height: 100vh;" id="ruler1">0vh</div>
-          <div style="height: 100vh;" id="ruler2">100vh</div>
-          <div style="height: 100vh;" id="ruler3">200vh</div>
-          <div style="height: 100vh;" id="ruler4">300vh</div>
-        </div>
-        
-
-        
-       
-        
-       
-       
-       
       </main>
       
       <!--Footer with open block field -->
