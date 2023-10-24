@@ -14,7 +14,12 @@
           </h1>
         {.end}
       </div>
+
       <main class="content-container" role="main" data-content-field="main-content">
+       <squarespace:block-field id="aboutContent" columns="12" style="min-width: 50px; border: 1px solid lime;"/>
+       <squarespace:block-field id="menuContent" columns="12" style="min-width: 50px; border: 1px solid lime;"/>
+       <squarespace:block-field id="shopContent" columns="12" style="min-width: 50px; border: 1px solid lime;"/>
+       
        {squarespace.main-content}
       </main>
 

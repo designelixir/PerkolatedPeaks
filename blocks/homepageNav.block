@@ -1,17 +1,9 @@
 <style>
-#header-footer {position: fixed; min-height: 500px; top: 0; left: 0; width: 100vw; height: 100%; max-height: 100vh; z-index: 100;}
-header {min-height: 150px; height: 20vh; max-height: 200px; max-width: 100vw; z-index: 110;}
+#header-footer {width: 100vw; height: 20vh; z-index: 500; border: 2px solid blue; position: fixed; bottom: 0vh; }
 
-#van-container {height: 70vh; margin-top: 0vh; width: 100%; }
-
-.nav-logo {  height: 100%; max-height: 200px; }
-.nav-menu {width: 70vw; height: 10vh; min-height: 100px; margin-top: -5vh;  background-image: url('../assets/plank.svg'); background-size: 100% 100%; background-position: center center;}
+.nav-menu {width: 70vw; height: 100px; border: 2px solid red;  margin-top: -2.5vh;  background-image: url('../assets/plank.svg'); background-size: 100% 100%; background-position: center center;}
 .nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 28px; color: white;}
 .site-title-heading a {text-align: center; margin-top: 350px; padding: 15px 25px; background: white; border-radius: 8px; border: 4px solid black;}
-#van-container {width: 95%; margin: 0 2.5%; background-image: url('../assets/van.svg'); background-size: contain; background-position: center 90%;}
-#mobile-van {display: none; height: 70vh;}
-
-#aspen {height: 100vh; width: 40vw; position: absolute; top: 0; right: -20vw;  }
 
 footer {padding-top: 5px; width: 100%; height: 8vh; text-align: center;}
 footer a {font-size: 12px;}
@@ -20,23 +12,16 @@ footer a {font-size: 12px;}
   .nav-logo {width: 100%; height: unset;}
   .nav-menu {width: 95%;}
   .nav-item {font-size: 24px;}
-  #van-container {background-image: url(''); }
-  #mobile-van {display: block;}
-}
-
-@media screen and (max-width: 500px) {
-    
 }
 </style>
 
 <div id="header-footer" class="flex-center-center flex-column">
-    <header class="flex-center-center ">
-        <img src="{website.logoImageUrl}" onclick="window.open('/', '_self')" class="nav-logo hover container-padding" alt="Perkolated Peaks Logo"/>
-    </header>
-    <div id="van-container" class="flex-end-center">
-        <img src="../assets/van-front.svg" id="mobile-van" />
-    </div>
         <nav class="nav-menu flex-center-center">
+        <p onclick="refresh()" class="nav-item">Home</p>
+        <p onclick="goTo('about')" class="nav-item">About</p>
+        <p onclick="goTo('menu')" class="nav-item">Menu</p>
+        <p onclick="goTo('shop')" class="nav-item">Shop</p>
+        
         {.repeated section items}
             <!-- collection link -->
             {.section collection}
@@ -53,12 +38,44 @@ footer a {font-size: 12px;}
             {.end}
         {.end}
     </nav>
-     <div id="aspen">
-            <img src="../assets/aspen-1.svg" style="height: 100%;"/>
-        </div>
+
   <footer class="flex-center-center flex-column">
     <p style="line-height: 0;">Copyright &copy; Perkolated Peaks 2023 </p>
     <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
   </footer>
     
 </div>
+
+<script>
+function goTo(linkName){
+    console.log(linkName)
+
+    if (linkName === "about"){
+        $('#scene-wrapper').css("width", "300vw")
+        $('#perk-peaks-logo').css("display", "none")
+        $('#van-container').css({"background-position": "30% center", "height": "150vh", "top": "-40vh", "left": "-20vw"})
+        $('#about').css("display", "block")
+    }
+    if (linkName === "menu"){
+        $('#scene-wrapper').css("width", "300vw")
+        $('#perk-peaks-logo').css("display", "none")
+        $('#van-container').css({"background-position": "50% center", "height": "150vh", "top": "-40vh", "left": "-90vw"})
+        $('#menu').css("display", "block")
+    }
+    if (linkName === "shop"){
+        $('#scene-wrapper').css("width", "300vw")
+        $('#perk-peaks-logo').css("display", "none")
+        $('#van-container').css({"background-position": "100% center", "height": "200vh", "top": "-70vh", "left": "-180vw"})
+        $('#shop').css("display", "block")
+    }
+
+    
+}
+
+function refresh(){
+    $('#scene-wrapper').css("width", "100vw")
+    $('#perk-peaks-logo').css("display", "block")
+    $('#van-container').css({"background-position": "center center", "height": "100vh", "top": "0vh", "left": "0vw"})
+    $('#about').css("display", "none")
+}
+</script>

@@ -37,22 +37,38 @@ a {text-decoration: none; color: inherit;}
 .site-title-heading h1 {font-size: 48px;}
 main {padding: 15px;}
 
-#home-content-container {width: 100vw; height: 400vh; border: 4px solid blue; z-index: 90;}
 
+#home-container {width: 100vw; height: 100vh; z-index: 400; position: fixed; top: 0; left: 0; overflow-y: scroll;}
+#van-container {width: 95%; height: 100vh; border: 3px solid green; margin: 0 2.5%; background-image: url('../assets/van.svg'); background-size: contain; background-position: center center; position: absolute; top: 0vh; left: 0;}
+
+header {min-height: 150px; height: 20vh; max-height: 200px; width: 100vw; z-index: 110; position: fixed; top: 0; left: 0;}
+
+button {padding: 25px; border: none; }
+
+#about {border: 2px solid yellow; height: 60vh; margin-top: 20vh; width: 100%; display: none;}
+.section-h1 {font-size: 68px; line-height: 0px;}
+.section-p {font-size: 24px; padding: 15px;  text-align: center; background: rgba(255,255,255,0.75)}
+.section-buttons {margin-top: 5vh;}
+.section-wrapper {padding: 5vh 15vw;}
+.nav-logo {  height: 100%; max-height: 200px; }
+@media screen and (max-width: 800px) {
+  // #van-container {background-image: url('../assets/van-front.svg'); }
+  
+}
 .menu {width: 75vw; height: 70vh; border: 3px solid teal; background-color: white;}
 
 .home-header {position: fixed; top: 0; left: 0; width: 100%; }
 .logo {height: 200px; }
 
-.ruler {width: 50px; position: absolute; top: 0; right: 0; height: 400vh; background: magenta;}
+.ruler {width: 50px; position: absolute; top: 0; right: 0; height: 400vh; background: magenta; z-index: 200;}
 
 .spacer{height: 100vh; width: 100%; border: 6px solid orange;}
 .visuals {height: 100vh; width: 100vw; position: fixed; top: 0; left: 0; z-index: -1; }
 
 .scene-container {height: 100vh; width: 100vw; position: fixed; top: 0; left: 0; z-index: -1; }
 .mountain-layer { width: 100vw; height: 50vh; background-image: url('../assets/mtns.svg'); background-size: cover; background-position: 0 center; min-height: 375px; max-height: 550px;}
-.van-container-wrapper {height: 100vh; width: 100%; border: 10px solid black; position: fixed; top: 0; left: 0;}
-.van-container {width: 100vh; margin-top: 15vh;  padding: 0px 5%; height: 100%; max-height: 70vh; border: 1px solid lime; background-size: contain; background-image: url('../assets/van_1.svg'); background-position: center center; position: fixed; z-index: 5;}
+.van-container-wrapper {height: 100vh; width: 100%; border: 2px solid black; position: fixed; top: 0; left: 0;}
+.van-container {width: 100vh; margin-top: 15vh;  padding: 0px 5%; height: 100%; max-height: 70vh;  background-size: contain; background-image: url('../assets/van_1.svg'); background-position: center center; position: fixed; z-index: 5;}
 .van-section-1 {width: 28%; border: 2px solid purple; height: 100%;}
 .van-section-2 {width: 32%; border: 2px solid red; height: 100%;}
 .van-section-3 {width: 35%; border: 2px solid yellow; height: 100%;}

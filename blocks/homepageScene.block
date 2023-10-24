@@ -60,7 +60,7 @@
             <img src="../assets/long-trees-flipped.svg" style="width: 60%; margin-right: -10%;"/>
         </div>
         <div id="road">
-            <img src="../assets/highway-2.svg" style="height: 50%; margin-top: 10vh; transform: rotate(-10deg); margin-left: -5vw;"/>
+            
         </div>
         <div id="welcome-sign" class="flex-start-center">
             <img src="../assets/welcome-sign.svg" style="height: 100%"/>
@@ -68,6 +68,7 @@
         <div id="aspen-bg">
             <img src="../assets/aspen-1.svg" style="width: 100%;"/>
         </div>
+        <div id="van-container" class="flex-end-center"></div>
        
     </div>
 </div>
