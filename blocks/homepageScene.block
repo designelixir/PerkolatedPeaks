@@ -1,7 +1,7 @@
 <style>
 
-#scene-wrapper {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0;}
-#mountain-wrapper { width: 100%; height: 60vh; position: absolute; top: 0; margin-top: 2vh; left: 0; z-index: 0;}
+#scene-wrapper {width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: -1;}
+#mountain-wrapper { width: 100%; height: 60vh; position: absolute; top: 0; left: 0; z-index: 0;}
 #twin-peaks-wrapper {width: 60%;  height: 100%; background-image: url('../assets/twin-peaks.svg'); background-size: 100%; background-position: 100% 30%;  }
 #parry-peak-wrapper {width: 60%; margin-left: -20%; height: 100%; background-image: url('../assets/parry-peak.svg'); background-size: 100%; background-position: 100% 30%;}
 
@@ -17,21 +17,25 @@
 #road {width: 100%; height: 45vh; position: absolute; top: 45vh; background-image: url('../assets/foreground-2.svg'); background-size: cover;}
 #welcome-sign {width: 30vw; height: 30vh; position: absolute; top: 25vh; left: -5vw;}
 
-#aspen-bg {position: absolute; right: 0vw; top: -10vh; width: 30vw; height: 70vh; max-width: 400px; transform: scaleX(-1)}
-
+#aspen-bg {position: absolute; right: 0vw; top: -10vh; width: 25vw; height: 60vh; max-width: 400px; transform: scaleX(-1)}
+#homeVanContainer {width: 100%; height: 70vh; position: fixed; top: 20vh; z-index: 2; left: 0; }
+#aspen-fg {position: absolute; right: -17vw; top: 0vh; height: 100vh; width: 34vw; z-index: 2;}
 
 @media screen and (max-width: 1000px) {
-#mountain-wrapper {height: 45vh; top: -4vh;}
-  #parry-peak-wrapper {background-position: 100% 15%; margin-right: -10vw}
-  #twin-peaks-wrapper {background-position: 100% 15%; margin-left: -20%;}
+#mountain-wrapper {height: 45vh; }
+  #parry-peak-wrapper {background-position: 100% 15%; width: 70%; margin-right: -40%}
+  #twin-peaks-wrapper {background-position: 100% 15%; width: 100%; margin-left: -30%;}
   #trees-left {height: 25vh;}
   #trees-bg {height: 30vh; top: 0vh;}
   #trees-overlay {height: 30vh; top: 5vh;}
   #trees-overlay img {width: 120vw;}
-  #road {height: 60vh; top: 30vh; }
+  #road {height: 60vh; top: 30vh; background-position: 68% center; }
   #road img {width: 100%; height: unset; margin-top: 10vh!important; left: -10vw;}
   #welcome-sign {top: 15vh; height: 25vh;}
   #aspen-bg {width: 40vw; margin-right: -25vw;}
+  #homeVanContainer {top: 16vh;}
+  #vanOverlayContainer {top: 16vh;}
+  #aspen-fg {display: none;}
 }
 </style>
 
@@ -68,7 +72,40 @@
         <div id="aspen-bg">
             <img src="../assets/aspen-1.svg" style="width: 100%;"/>
         </div>
-        <div id="van-container" class="flex-end-center"></div>
-       
     </div>
+    <div id="homeVanContainer">
+        <div id="van-container" class="flex-center-center">
+          <img src="../assets/van_1.svg" id="van-image"/>
+          <img src="../assets/van-front.svg" id="van-front"/>
+      </div>
+    </div>
+    <div id="aspen-fg">
+            <img src="../assets/aspen-1.svg" style="width: 100%;"/>
+        </div>
 </div>
+
+<script>
+function createOverlay(width) {
+    var overlay = document.getElementById("vanOverlay");
+    if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "vanOverlay";
+        document.body.appendChild(overlay);
+    }
+    overlay.style.width = width + "px";
+}
+
+function updateOverlaySize() {
+    var image = document.getElementById("van-image");
+    if (image) {
+        var width = image.width;
+        createOverlay(width);
+    }
+}
+window.onload = function() {
+    updateOverlaySize();
+    window.addEventListener('resize', function(event) {
+        updateOverlaySize();
+    });
+};
+</script>

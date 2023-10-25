@@ -1,49 +1,45 @@
 <style>
-#header-footer {width: 100vw; height: 20vh; z-index: 500; border: 2px solid blue; position: fixed; bottom: 0vh; }
+#header-footer {width: 100%; height: 100%; background-image: url('../assets/plank.svg'); background-size: 100% 100%; background-position: center center;}
 
-.nav-menu {width: 70vw; height: 100px; border: 2px solid red;  margin-top: -2.5vh;  background-image: url('../assets/plank.svg'); background-size: 100% 100%; background-position: center center;}
+#desktop-nav-menu {display: flex; width: 70vw;  }
 .nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 28px; color: white;}
 .site-title-heading a {text-align: center; margin-top: 350px; padding: 15px 25px; background: white; border-radius: 8px; border: 4px solid black;}
 
 footer {padding-top: 5px; width: 100%; height: 8vh; text-align: center;}
 footer a {font-size: 12px;}
+#mobile-nav-menu {display: none;}
 
 @media screen and (max-width: 800px) {
-  .nav-logo {width: 100%; height: unset;}
-  .nav-menu {width: 95%;}
-  .nav-item {font-size: 24px;}
+#mobile-nav-menu {display: flex;}
+#desktop-nav-menu {display: none;}
+.nav-item {font-size: 24px;}
 }
 </style>
 
 <div id="header-footer" class="flex-center-center flex-column">
-        <nav class="nav-menu flex-center-center">
-        <p onclick="refresh()" class="nav-item">Home</p>
-        <p onclick="goTo('about')" class="nav-item">About</p>
-        <p onclick="goTo('menu')" class="nav-item">Menu</p>
-        <p onclick="goTo('shop')" class="nav-item">Shop</p>
-        
-        {.repeated section items}
-            <!-- collection link -->
-            {.section collection}
-            <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
-                {navigationTitle}
-            </a>
-            {.end}
-
-            <!-- external link -->
-            {.section externalLink}
-                <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
-                {title}
+        <nav id="desktop-nav-menu" class="nav-menu flex-center-center">
+            <p onclick="refresh()" class="nav-item hover">Home</p>
+            <p onclick="goTo('about')" class="nav-item hover">About</p>
+            <p onclick="goTo('menu')" class="nav-item hover">Menu</p>
+            <p onclick="goTo('shop')" class="nav-item hover">Shop</p>
+        </nav>
+        <nav id="mobile-nav-menu" class="flex-center-center">
+            {.repeated section items}
+                <!-- collection link -->
+                {.section collection}
+                <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
+                    {navigationTitle}
                 </a>
-            {.end}
-        {.end}
-    </nav>
+                {.end}
 
-  <footer class="flex-center-center flex-column">
-    <p style="line-height: 0;">Copyright &copy; Perkolated Peaks 2023 </p>
-    <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
-  </footer>
-    
+                <!-- external link -->
+                {.section externalLink}
+                    <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
+                    {title}
+                    </a>
+                {.end}
+            {.end}
+        </nav>
 </div>
 
 <script>
