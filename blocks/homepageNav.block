@@ -18,27 +18,10 @@ footer a {font-size: 12px;}
 
 <div id="header-footer" class="flex-center-center flex-column">
         <nav id="desktop-nav-menu" class="nav-menu flex-center-center">
-            <p onclick="refresh()" class="nav-item hover">Home</p>
-            <p onclick="goTo('about')" class="nav-item hover">About</p>
-            <p onclick="goTo('menu')" class="nav-item hover">Menu</p>
-            <p onclick="goTo('shop')" class="nav-item hover">Shop</p>
+            <squarespace:navigation navigationId="siteNav" template="site-navigation" />
         </nav>
         <nav id="mobile-nav-menu" class="flex-center-center">
-            {.repeated section items}
-                <!-- collection link -->
-                {.section collection}
-                <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
-                    {navigationTitle}
-                </a>
-                {.end}
-
-                <!-- external link -->
-                {.section externalLink}
-                    <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
-                    {title}
-                    </a>
-                {.end}
-            {.end}
+            <squarespace:navigation navigationId="siteNav" template="site-navigation" />
         </nav>
 </div>
 

@@ -1,37 +1,16 @@
 
-<style>
-
-</style>
-
-<div class="header-environment-container flex-center-center" >
-  {@|apply environment.block}
-  <div class="van-layer flex-end-center">
-    <div class="title-layer flex-center-center">
-      {.section website}
-          <h1 class="site-title-heading container-padding" data-content-field="site-title">
-            <a href="/" class="site-title-link">{collection.title}</a>
-          </h1>
-        {.end}
-      </div>
-  </div>
-</div>
-
-<header class="nav-header container-padding flex-end-end flex-column">
-  <nav class="nav-menu flex-center-center">
-      {.repeated section items}
-          <!-- collection link -->
-          {.section collection}
-          <a href="{fullUrl}" class="site-navigation-item hover {.section active} active-link{.end}">
+    {.repeated section items}
+        <!-- collection link -->
+        {.section collection}
+        <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
             {navigationTitle}
-          </a>
-          {.end}
+        </a>
+        {.end}
 
-          <!-- external link -->
-          {.section externalLink}
-            <a href="{url}" class="site-navigation-item" {.section newWindow} target="_blank"{.end}>
-              {title}
+        <!-- external link -->
+        {.section externalLink}
+            <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
+            {title}
             </a>
-          {.end}
-      {.end}
-  </nav>
-</header>
+        {.end}
+    {.end}
