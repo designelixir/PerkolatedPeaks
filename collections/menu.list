@@ -1,0 +1,12 @@
+
+<!-- item loop -->
+{.repeated section items}
+
+  {title}
+  {body}
+
+{.or}
+
+<p><em>No menu items posts yet.</em></p>
+
+{.end}

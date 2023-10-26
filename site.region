@@ -14,7 +14,7 @@
         {.end}
       </div>
 
-      <main class="content-container" role="main" data-content-field="main-content">
+      <main class="container-padding content-container" role="main" data-content-field="main-content">
        <squarespace:block-field id="{collection.title}-Block" columns="12" style="min-width: 50px;"/>
        
        {squarespace.main-content}
