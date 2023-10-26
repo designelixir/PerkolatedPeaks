@@ -1,6 +1,29 @@
-<div class="category-wrapper flex-start-start">
+{#  <div class="category-wrapper flex-start-start">
     <div class="category-name active-category"><p>Coffee</p></div>
     <div class="category-name"><p>Iced Tea & Drinks</p></div>
     <div class="category-name" ><p>Hot Tea & Drinks</p></div>
     <div class="category-name"><p>Food</p></div>
+</div>
+  }
+
+<div id="coffeeCategory" class="category-section container-padding">
+    <h2>Coffee </h2>
+    <div class="category-wrapper">
+    <squarespace:query collection="menu" category="Coffee" limit="10">
+
+    <ol>
+        {.repeated section items}
+        <div class="flex-center-spacebetween">
+            <h3>{title}</h3>
+            <div class="price-block">
+                {.if customContent.price}<p>${customContent.price}</p>{.end}
+                {.if customContent.priceTwelveOz}<p>12 oz. --${customContent.priceTwelveOz}</p>{.end}
+                {.if customContent.priceSixteenOz}<p>15 oz. --${customContent.priceSixteenOz}</p>{.end}
+            
+        {.end}
+    </ol>
+
+    </squarespace:query>
+    </div>
+
 </div>
