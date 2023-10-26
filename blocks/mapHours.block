@@ -1,13 +1,13 @@
 <style>
 
 #mapContainer {width: 100%; height: 400px; border: 2px solid red;}
-#map {width: 60%; border: 2px solid green; height: 100%;}
+#mapBlock {width: 60%; border: 2px solid green; height: 100%;}
 #hours {width: 40%; border: 2px solid teal; height: 100%;}
 </style>
 
 <div id="mapContainer" class="flex-center-center">
-    <div id="map"><squarespace:block-field id="mapBlock" columns="2" /></div>
+    <squarespace:block-field id="mapBlock" columns="1" />
     <div id="hours">
-        <squarespace:block-field id="hoursContainer" columns="1" />
+        <squarespace:block-field id="hoursContainer" columns="2" />
     </div>
 </div>
