@@ -6,7 +6,7 @@
 </style>
 
 <div id="mapContainer" class="flex-center-center">
-    <div id="map"><squarespace:block-field id="hoursContainer" columns="1" /></div>
+    <div id="map"><squarespace:block-field id="mapBlock" columns="1" /></div>
     <div id="hours">
 <a style="text-align: center;" href="https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6" target="_blank"><p><span style="font-weight: 600">Perkolated Peaks </span><br>       
                 6490 E. State Highway 82<br>
@@ -16,6 +16,5 @@
                     <button><a href="https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6" target="_blank">GET DIRECTIONS</a></button>
                 </div>
                   <squarespace:block-field id="hoursContainer" columns="1" />
-                  <squarespace:block-field id="footerSocial" columns="1" />
     </div>
 </div>
