@@ -36,7 +36,7 @@
       <footer class="flex-center-center flex-column" id="homepageFooter">
         <p id="copyright">Copyright &copy; Perkolated Peaks 2023</p> 
         <a id="de-link" class="hover" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
-        <squarespace:block-field id="footerSocial" columns="1" />
+        
       </footer> 
     </main>
 

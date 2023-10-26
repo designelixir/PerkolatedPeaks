@@ -1,4 +1,4 @@
-{@|apply mapHours.block}
+
 <div id="coffeeCategory" class="category-section container-padding">
     <h2>Hot Coffee</h2>
     <div class="category-wrapper flex-start-start flex-wrap">
