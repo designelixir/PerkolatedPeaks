@@ -42,14 +42,15 @@
             <div class="flex-start-spacebetween">
                 <h3>{title}</h3>
                 <div class="price-block">
-                    <p>{customContent.price}</p>
-                    <p>12 oz. --${customContent.priceTwelveOz}</p>
-                    <p>15 oz. --${customContent.priceSixteenOz}</p>
+                    <p>{customContent.price1}</p>
+                    <p>{customContent.price2}</p>
+                    <p>{customContent.price3}</p>
                 </div>
             </div>
             <div class="menu-item-body">
                 {body}
                 {.if tags}
+                    <p style="font-weight: 700">Available in:</p>
                     <p class="tag">{.repeated section tags}{@}{.alternates with}, {.end}</p>
                 {.end}
             </div>
