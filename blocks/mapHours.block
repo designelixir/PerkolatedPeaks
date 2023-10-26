@@ -8,6 +8,6 @@
 <div id="mapContainer" class="flex-center-center">
     <squarespace:block-field id="mapBlock" columns="1" />
     <div id="hours">
-        <squarespace:block-field id="hoursContainer" columns="2" />
+        <squarespace:block-field id="hoursContainer" columns="1" />
     </div>
 </div>
