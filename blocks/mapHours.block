@@ -1,0 +1,21 @@
+<style>
+
+#mapContainer {width: 100%; height: 400px; border: 2px solid red;}
+#map {width: 60%; border: 2px solid green; height: 100%;}
+#hours {width: 40%; border: 2px solid teal; height: 100%;}
+</style>
+
+<div id="mapContainer" class="flex-center-center">
+    <div id="map"><squarespace:block-field id="hoursContainer" columns="1" /></div>
+    <div id="hours">
+<a style="text-align: center;" href="https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6" target="_blank"><p><span style="font-weight: 600">Perkolated Peaks </span><br>       
+                6490 E. State Highway 82<br>
+                Twin Lakes, CO, 81251</p></a>
+                <div style="display: flex; align-items: center; justify-content: center; width: 100%; padding-top: 10px;">
+                    <button style="margin-right: 15px;"><a href="tel:7203183278">CALL US</a></button>
+                    <button><a href="https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6" target="_blank">GET DIRECTIONS</a></button>
+                </div>
+                  <squarespace:block-field id="hoursContainer" columns="1" />
+                  <squarespace:block-field id="footerSocial" columns="1" />
+    </div>
+</div>

@@ -1,11 +1,4 @@
-{#  <div class="category-wrapper flex-start-start">
-    <div class="category-name active-category"><p>Coffee</p></div>
-    <div class="category-name"><p>Iced Tea & Drinks</p></div>
-    <div class="category-name" ><p>Hot Tea & Drinks</p></div>
-    <div class="category-name"><p>Food</p></div>
-</div>
-  }
-
+{@|apply mapHours.block}
 <div id="coffeeCategory" class="category-section container-padding">
     <h2>Hot Coffee</h2>
     <div class="category-wrapper flex-start-start flex-wrap">
