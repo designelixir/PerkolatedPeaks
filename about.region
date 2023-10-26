@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.typekit.net/yye6qvk.css">
+    {squarespace-headers}
+  </head>
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes} sky-narrow">
+      {@|apply shortNavigation.block}
+      <div class="title-layer flex-center-center">
+      {.section website}
+          <h1 class="site-title-heading container-padding hover" data-content-field="site-title">{collection.title}</h1>
+        {.end}
+      </div>
+
+      <main class="container-padding content-container" role="main" data-content-field="main-content">
+       <squarespace:block-field id="{collection.title}-Block" columns="12" style="min-width: 50px;"/>
+       <div id="mapContainer" class="flex-center-center">
+            <squarespace:block-field id="mapBlock" columns="1" />
+            <div id="hours">
+                <squarespace:block-field id="hoursContainer" columns="1" />
+            </div>
+        </div>
+       {squarespace.main-content}
+      </main>
+
+      {@|apply footer.block}
+    <!-- combo and minify scripts when not logged in -->
+    <squarespace:script src="site.js" combo="{.if authenticatedAccount}false{.or}true{.end}" />
+
+    <!-- other scripts, and footer code injection -->
+    {squarespace-footers}
+
+  </body>
+</html>
