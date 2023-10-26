@@ -13,7 +13,7 @@
 
     {.repeated section items}
              <div class="menu-item">
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <div class="menu-item-body">
                     {body}
                     {.if tags}
@@ -36,7 +36,7 @@
             {.repeated section items}
              <div class="menu-item">
             <div class="flex-start-spacebetween">
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <div class="price-block">
                     <p>{customContent.price1}</p>
                     <p>{customContent.price2}</p>
@@ -64,7 +64,7 @@
             {.repeated section items}
              <div class="menu-item">
             <div class="flex-start-spacebetween">
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <div class="price-block">
                     <p>{customContent.price1}</p>
                     <p>{customContent.price2}</p>
@@ -93,13 +93,90 @@
             {.repeated section items}
              <div class="menu-item">
             <div class="flex-start-spacebetween">
-                <h3>{title}</h3>
+                <h4>{title}</h4>
                 <div class="price-block">
                     <p>{customContent.price1}</p>
                     <p>{customContent.price2}</p>
                     <p>{customContent.price3}</p>
                 </div>
             </div>
+            <div class="menu-item-body">
+                {body}
+                {.if tags}
+                    <p style="font-weight: 700">Available in:</p>
+                    <p class="tag">{.repeated section tags}{@}{.alternates with}, {.end}</p>
+                {.end}
+            </div>
+            </div>
+            {.end}
+        
+        </squarespace:query>
+    </div>
+</div>
+
+<div id="hotDrinksCategory" class="category-section container-padding">
+    <h2>Burritos</h2>
+    <h3>Breakfast Burritos</h3>
+    <div class="category-wrapper flex-start-start flex-wrap">
+        <squarespace:query collection="menu" category="Breakfast Burritos" limit="10">
+       
+            {.repeated section items}
+             <div class="menu-item">
+            <div class="flex-start-spacebetween">
+                <h4>{title}</h4>
+                <div class="price-block">
+                    <p>{customContent.price1}</p>
+                    <p>{customContent.price2}</p>
+                    <p>{customContent.price3}</p>
+                </div>
+            </div>
+            <div class="menu-item-body">
+                {body}
+                {.if tags}
+                    <p style="font-weight: 700">Available in:</p>
+                    <p class="tag">{.repeated section tags}{@}{.alternates with}, {.end}</p>
+                {.end}
+            </div>
+            </div>
+            {.end}
+        
+        </squarespace:query>
+    </div>
+    <h3>Lunch Burritos</h3>
+    <div class="category-wrapper flex-start-start flex-wrap">
+        <squarespace:query collection="menu" category="Lunch Burritos" limit="10">
+       
+            {.repeated section items}
+             <div class="menu-item">
+            <div class="flex-start-spacebetween">
+                <h4>{title}</h4>
+                <div class="price-block">
+                    <p>{customContent.price1}</p>
+                    <p>{customContent.price2}</p>
+                    <p>{customContent.price3}</p>
+                </div>
+            </div>
+            <div class="menu-item-body">
+                {body}
+                {.if tags}
+                    <p style="font-weight: 700">Available in:</p>
+                    <p class="tag">{.repeated section tags}{@}{.alternates with}, {.end}</p>
+                {.end}
+            </div>
+            </div>
+            {.end}
+        
+        </squarespace:query>
+    </div>
+</div>
+
+<div id="hotDrinksCategory" class="category-section container-padding">
+    <h2>Snacks</h2>
+    <div class="category-wrapper flex-start-start flex-wrap">
+        <squarespace:query collection="menu" category="Snacks" limit="10">
+            {.repeated section items}
+             <div class="menu-item">
+            <h4>{title}</h4>
             <div class="menu-item-body">
                 {body}
                 {.if tags}
