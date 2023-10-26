@@ -116,7 +116,7 @@
 
 <div id="hotDrinksCategory" class="category-section container-padding">
     <h2>Burritos</h2>
-    <h3>Breakfast Burritos</h3>
+    <h3 style="color: gray;">Breakfast Burritos</h3>
     <div class="category-wrapper flex-start-start flex-wrap">
         <squarespace:query collection="menu" category="Breakfast Burritos" limit="10">
        
@@ -142,7 +142,7 @@
         
         </squarespace:query>
     </div>
-    <h3>Lunch Burritos</h3>
+    <h3 style="color: gray;">Lunch Burritos</h3>
     <div class="category-wrapper flex-start-start flex-wrap">
         <squarespace:query collection="menu" category="Lunch Burritos" limit="10">
        
