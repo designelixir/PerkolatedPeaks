@@ -8,8 +8,62 @@
 
 <div id="coffeeCategory" class="category-section container-padding">
     <h2>Coffee </h2>
-    <div class="category-wrapper">
+    <div class="category-wrapper flex-start-start flex-wrap">
     <squarespace:query collection="menu" category="Coffee" limit="10">
+
+    <div class="menu-item">
+        {.repeated section items}
+        <div class="flex-start-spacebetween">
+            <h3>{title}</h3>
+            <div class="price-block">
+                <p>{customContent.price}</p>
+                {.if customContent.priceTwelveOz}<p>12 oz. --${customContent.priceTwelveOz}</p>{.end}
+                {.if customContent.priceSixteenOz}<p>15 oz. --${customContent.priceSixteenOz}</p>{.end}
+            </div>
+        </div>
+        {body}
+        {.if tags}
+            <span class="tag">{.repeated section tags}{name}{.alternates with}, {.end}</span>
+        {.end}
+        {.end}
+    </div>
+
+    </squarespace:query>
+    </div>
+</div>
+
+<div id="hotDrinksCategory" class="category-section container-padding">
+    <h2>Hot Tea </h2>
+    <div class="category-wrapper flex-start-start flex-wrap">
+        <squarespace:query collection="menu" category="Hot Tea" limit="10">
+       
+            {.repeated section items}
+             <div class="menu-item">
+            <div class="flex-start-spacebetween">
+                <h3>{title}</h3>
+                <div class="price-block">
+                    <p>{customContent.price}</p>
+                    <p>12 oz. --${customContent.priceTwelveOz}</p>
+                    <p>15 oz. --${customContent.priceSixteenOz}</p>
+                </div>
+            </div>
+            <div class="menu-item-body">
+                {body}
+                {.if tags}
+                    <p class="tag">{.repeated section tags}{@}{.alternates with}, {.end}</p>
+                {.end}
+            </div>
+            </div>
+            {.end}
+        
+        </squarespace:query>
+    </div>
+</div>
+
+<div id="icedDrinksCategory" class="category-section container-padding">
+    <h2>Iced Tea </h2>
+    <div class="category-wrapper">
+    <squarespace:query collection="menu" category="Iced Tea" limit="10">
 
     <ol>
         {.repeated section items}
@@ -25,5 +79,46 @@
 
     </squarespace:query>
     </div>
+</div>
 
+<div id="coldDrinksCategory" class="category-section container-padding">
+    <h2>Cold Drinks </h2>
+    <div class="category-wrapper">
+    <squarespace:query collection="menu" category="Cold Drinks" limit="10">
+
+    <ol>
+        {.repeated section items}
+        <div class="flex-center-spacebetween">
+            <h3>{title}</h3>
+            <div class="price-block">
+                {.if customContent.price}<p>${customContent.price}</p>{.end}
+                {.if customContent.priceTwelveOz}<p>12 oz. --${customContent.priceTwelveOz}</p>{.end}
+                {.if customContent.priceSixteenOz}<p>15 oz. --${customContent.priceSixteenOz}</p>{.end}
+            
+        {.end}
+    </ol>
+
+    </squarespace:query>
+    </div>
+</div>
+
+<div id="foodCategory" class="category-section container-padding">
+    <h2>Food </h2>
+    <div class="category-wrapper">
+    <squarespace:query collection="menu" category="Food" limit="10">
+
+    <ol>
+        {.repeated section items}
+        <div class="flex-center-spacebetween">
+            <h3>{title}</h3>
+            <div class="price-block">
+                {.if customContent.price}<p>${customContent.price}</p>{.end}
+                {.if customContent.priceTwelveOz}<p>12 oz. --${customContent.priceTwelveOz}</p>{.end}
+                {.if customContent.priceSixteenOz}<p>15 oz. --${customContent.priceSixteenOz}</p>{.end}
+            
+        {.end}
+    </ol>
+
+    </squarespace:query>
+    </div>
 </div>
