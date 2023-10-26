@@ -7,9 +7,9 @@
   }
 
 <div id="coffeeCategory" class="category-section container-padding">
-    <h2>Coffee </h2>
+    <h2>Hot Coffee</h2>
     <div class="category-wrapper flex-start-start flex-wrap">
-    <squarespace:query collection="menu" category="Coffee" limit="10">
+    <squarespace:query collection="menu" category="Hot Coffee" limit="10">
 
     <div class="menu-item">
         {.repeated section items}
