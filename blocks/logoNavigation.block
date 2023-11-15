@@ -1,0 +1,12 @@
+<div style="width: 100vw; height: 400px;  z-index: -1; overflow: clip; top: 0; left: 0;  border: 1px solid red; background-image: url('../assets/gradient.png'); background-size: 100% 100%; background-origin: 0 0;" class="flex-center-center">
+    
+    <div style="background-image: url('../assets/scene3.png'); background-size: contain; background-position: 50% 50%; background-origin: center bottom; height: 400px; width: 100%;">
+    
+    </div>
+        
+    
+</div>
+
+{#  <div style=" border: 1px solid lime; width: 100vw; margin-top: 200px;" class="flex-center-center">
+            <img src="../assets/perkolated-peaks-alt.png" style="width: 50vw; min-width: 400px;"/>
+        </div>  }
