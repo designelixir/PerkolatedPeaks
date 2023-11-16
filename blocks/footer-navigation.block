@@ -1,0 +1,20 @@
+
+
+<div class="flex-center-center" style="font-size: 18px!important;">
+{.repeated section items}
+    <!-- collection link -->
+    {.section collection}
+    <a href="{fullUrl}" class="footer-nav-item hover {.section active} active-link{.end}">
+        {navigationTitle}
+    </a>  
+    {.end}
+
+    <!-- external link -->
+    {.section externalLink}
+        <a href="{url}" class="footer-nav-item hover" {.section newWindow} target="_blank"{.end}>
+        {title}
+        </a>  
+    {.end}
+    {.alternates with} • 
+{.end}
+</div>

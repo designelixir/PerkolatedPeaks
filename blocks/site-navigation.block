@@ -1,4 +1,9 @@
-<div class="flex-center-center">
+<style>
+.nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 28px; color: white;}
+@media screen and (max-width: 800px) {
+  .nav-item {font-size: 18px;}
+}
+</style>
 {.repeated section items}
     <!-- collection link -->
     {.section collection}
@@ -9,9 +14,8 @@
 
     <!-- external link -->
     {.section externalLink}
-        <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
+        <a href="{url}" class="nav-item hover" {.section newWindow} target="_blank"{.end}>
         {title}
         </a>
     {.end}
 {.end}
-</div>
