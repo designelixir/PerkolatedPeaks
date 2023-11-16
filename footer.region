@@ -1,7 +1,8 @@
 <style>
    .footer-logo {width: 200px; padding: 25px 25px 25px 0px;}
+   .footer-wrapper {background-image: url('assets/flower-border.png'); background-size: 100% 100%; width: 100%; height: 100%; padding: 2vw;}
    .footer-nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 18px; color: white;}
-   footer {color: white; background-color: var(--blue); padding: 2vw; border: 10px solid var(--cream);}
+   footer {color: white; background-color: var(--blue);  border: 10px solid var(--cream);}
    #de-link {font-size: 12px;}
    
    .footer-top-wrapper {margin-bottom: 50px;}
@@ -26,6 +27,7 @@
    }
 </style>
 <footer class="flex-center-center flex-column">
+    <div class="footer-wrapper">
    <div class="footer-top-wrapper flex-center-spacebetween">
       <div class="flex-center-start footer-details" style="max-width: 550px;">
          <img src="../assets/van-front.svg" onclick="window.open('/', '_self')" class="footer-logo hover" alt="Perkolated Peaks Logo"/>   
@@ -44,13 +46,16 @@
          </div>
       </div>
       <div class="newsletter-container flex-center-center">
-         <img src="../assets/flower-piece.svg" style="width: 115px;"/>
-         <squarespace:block-field id="mapBlock" columns="1" style="height: 100%"/>
-         <img src="../assets/flower-piece.svg" style="width: 115px; margin-left: -100px; transform: rotate(180deg)"/>
+         
+         <squarespace:block-field id="newsletterBlock" columns="1" style="height: 100%"/>
+         
       </div>
    </div>
    <squarespace:navigation navigationId="footerNav" template="footer-navigation"/>
    <br>
-   <p>Copyright &copy; {location.addressTitle} 2023 </p>
-   <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
+   <div style="text-align: center">
+    <p>Copyright &copy; {location.addressTitle} 2023 </p>
+    <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
+   </div>
+   </div>
 </footer>

@@ -1,7 +1,7 @@
 <style>
 
 
-#slideshow {}
+#slideshow {margin-top: -75px; }
 .slideshow-container { width: 96vw;  margin: 0px 2vw 100px;}
 .scrolling-container-wrapper {width: 20vw;}
 .scrolling-container {  margin: 25px 5px; height: 100%; overflow: scroll; border-radius: 10px; -ms-overflow-style: none; scrollbar-width: none;}
@@ -20,8 +20,8 @@
 }
 
 </style>
-<div class="flex-center-center">
-    <div style="background: var(--blue); width: 85vw; padding: 25px">
+<div class="flex-center-center" style="transform: translateY(50px)">
+    <div style="background: var(--blue); width: 85vw; border-radius: 10px; padding: 50px">
         <squarespace:block-field id="slideshowHero" columns="1"/>
     </div>
 </div>
