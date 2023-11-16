@@ -13,7 +13,8 @@
 
 
 * {box-sizing: border-box; background-repeat: no-repeat;}
-body {max-width: 100vw; overflow-x: hidden; background-color: var(--cream)!important}
+html {background-color: var(--cream)!important}
+body {max-width: 100vw; overflow-x: hidden; }
 
 h1 {font-size: 36px; font-family: 'Mintello', serif; }
 h2 {font-size: 32px; font-family: 'Mintello', serif; }
@@ -96,7 +97,7 @@ a p {font-size: 16px; text-decoration: underline; font-family: 'Europa', sans-se
 .active-category {background: purple; color: white;}
 
 
-.category-section {background: white; margin-top: 50px; }
+.category-section {background: rgba(255,255,255,0.25); border-radius: 10px; margin-top: 50px; }
 .menu-item {width: 45%; margin: 0.5% 1%; padding: 0.5%;  }
 .menu-item h4 {line-height: 25px; margin: 0 0 5px;}
 .menu-item-body {width: 100%; }
@@ -180,6 +181,9 @@ button {padding: 25px; border: none; }
 
 //  Shop
 
+.product {border-radius: 10px; padding:10px; background-color: rgba(255,255,255,0.25);}
+.product:hover {border: 10px solid white; padding: 0px;cursor: pointer;}
+
 .absolute-cart-box {top: unset!important; bottom: 25px; right: 25px;}
 .sqs-pill-shopping-cart { font-family: 'Europa', sans-serif;height: 50px; font-size: 18px!important; color: white; }
 
@@ -187,3 +191,6 @@ button {padding: 25px; border: none; }
   display: flex;
   align-items: center; background-color: purple!important; background-image: unset!important; border: none!important;}
 
+  #productList .product .product-title {
+    font-size: 18px!important; font-weight: 700;
+  }

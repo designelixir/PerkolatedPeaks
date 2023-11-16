@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/yye6qvk.css">
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes} sky-narrow">
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
       {@|apply globalNavigation.block}
       <div class="title-layer flex-center-center">
       {.section website}
