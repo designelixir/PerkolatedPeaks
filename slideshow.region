@@ -1,8 +1,8 @@
 <style>
 
 
-
-.slideshow-container { width: 96vw; height: 50vh; margin: 0px 2vw 100px; z-index: -1;}
+#slideshow {border: 2px solid teal;   }
+.slideshow-container { width: 96vw;  margin: 0px 2vw 100px;}
 .scrolling-container-wrapper {width: 20vw;}
 .scrolling-container {  margin: 25px 5px; height: 100%; overflow: scroll; border-radius: 10px; -ms-overflow-style: none; scrollbar-width: none;}
 .scrolling-container::-webkit-scrollbar { display: none;}
@@ -73,20 +73,27 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>
-function scroller(id) {
+function scroller(id, triggerAntiScroll) {
     var innerHeight = $(id)[0].scrollHeight;
-    var speed = innerHeight * 10;
+    var speed = innerHeight * 25;
+    if (triggerAntiScroll){
+$("#slideshow").css("pointer-events", "none");
+        setTimeout(function(){ $("#slideshow").css("pointer-events", "unset"); },speed);
+
+    }
     $(id).animate({
   scrollTop: innerHeight
 }, 1);
 $(id).scroll();
 $(id).animate({scrollTop: 0}, speed, "linear");
-
+return speed;
 }
 
-$(document).ready(scroller("#scrollingContainer1"))
-$(document).ready(scroller("#scrollingContainer2"))
-$(document).ready(scroller("#scrollingContainer3"))
-$(document).ready(scroller("#scrollingContainer4"))
-$(document).ready(scroller("#scrollingContainer5"))
+
+
+$(document).ready(scroller("#scrollingContainer1", false))
+$(document).ready(scroller("#scrollingContainer2", false))
+$(document).ready(scroller("#scrollingContainer3", false))
+$(document).ready(scroller("#scrollingContainer4", false))
+$(document).ready(scroller("#scrollingContainer5", true))
 </script>
