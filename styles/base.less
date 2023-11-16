@@ -26,7 +26,8 @@ h2 a {text-decoration: underline}
 h3 a {text-decoration: underline; font-size: 24px;}
 h3 strong {font-weight: 800;}
 h4 a {text-decoration: underline}
-p a {text-decoration: underline;}
+p a {text-decoration: underline; font-size: 16px;}
+a p {font-size: 16px; text-decoration: underline;}
 
 .styled-button {background: purple; color: white; text-align: center; padding: 10px 25px; font-family: 'Europa', sans-serif; text-transform: uppercase;}
 
@@ -151,8 +152,10 @@ button {padding: 25px; border: none; }
   .mountain-layer
 }
 
-.slideshow-hero {width: 96vw; margin: 0 2vw; padding: 25px; border-radius: 25px; background-color: var(--cream)}
-
+.slideshow-hero {width: 85vw; margin: 0 7.5vw 0px; transform: translateY(50px); padding: 25px; border-radius: 25px; background-color: var(--cream); }
+@media screen and (max-width: 850px) {
+  .info-columns {flex-direction: column;}
+}
 
 // Footer
 
