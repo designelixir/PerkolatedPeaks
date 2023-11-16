@@ -1,13 +1,41 @@
 
 <style>
-.footer-logo {width: 150px;}
+.footer-logo {width: 200px;}
 footer {color: white;}
 #de-link {font-size: 12px;}
 </style>
 
 <footer class="flex-center-center flex-column container-padding sky-reverse">
-     <img src="../assets/van-front.svg" onclick="window.open('/', '_self')" class="footer-logo hover container-padding" alt="Perkolated Peaks Logo"/>
-    <squarespace:block-field id="footerSocialIcons" columns="12" style="min-width: 100px; min-height: 100px;"/>
+
+    <div class="footer-top-wrapper flex-center-spacebetween">
+        <div class="flex-center-start" style="width: 100%; margin-bottom: 50px; border: 2px solid lime;">
+            <img src="../assets/van-front.svg" onclick="window.open('/', '_self')" class="footer-logo hover container-padding" alt="Perkolated Peaks Logo"/>   
+            <div>
+            
+            
+        </div>
+        <div id="mapBlockContainer" class="flex-center-start">
+        <squarespace:block-field id="mapBlock" columns="1" />
+        <div style="background-color: white; color: black; position: absolute; padding: 25px;">
+        {.section website}
+                <h3 style="margin: 0px;">{location.addressTitle}</h3>
+                <p>📍 {location.addressLine1}, {location.addressLine2}</p>
+                <a href="mailto:perkolatedpeaks@gmail.com"><p>📧 {websiteSettings.contactEmail}</p></a>
+                <br>
+                 <button class="styled-button">Join Our Mailing List</button>
+                 <squarespace:block-field id="footerSocialIcons" columns="12" style="min-width: 100px; min-height: 100px;"/>
+                <br>
+
+            </div>
+            {.end}
+        </div>
+        </div>
+
+    </div>
+
+
+     
+    
     <p>Copyright &copy; Perkolated Peaks 2023 </p>
     <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
 </footer> 
