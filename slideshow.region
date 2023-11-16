@@ -1,8 +1,8 @@
 <style>
 
-.slideshow-hero {width: 96vw; margin: 0 2vw; padding: 25px; border-radius: 25px; background-color: var(--cream)}
+.slideshow-hero {width: 85vw; margin: 0 7.5vw 0px; transform: translateY(50px); padding: 25px; border-radius: 25px; background-color: var(--cream); }
 
-.slideshow-container { width: 96vw; margin: 0 2vw;}
+.slideshow-container { width: 96vw; height: 50vh; margin: 0px 2vw 100px; z-index: -1;}
 .scrolling-container-wrapper {width: 20vw;}
 .scrolling-container {  margin: 25px 5px; height: 100%; overflow: scroll; border-radius: 10px; -ms-overflow-style: none; scrollbar-width: none;}
 .scrolling-container::-webkit-scrollbar { display: none;}
@@ -19,6 +19,7 @@
 }
 
 </style>
+<section id="slideshow">
 <div class="slideshow-hero flex-center-center flex-column">
     <div>
     <squarespace:block-field id="{collection.title}-Block" columns="12" style="min-width: 50px;"/>
@@ -75,7 +76,7 @@
         </div>
     </div>
 </div>
-
+</section>
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
 <script>
