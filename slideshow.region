@@ -20,11 +20,14 @@
 }
 
 </style>
-<section id="slideshow">
-<div style="background: var(--blue); width: 85vw; padding: 25px">
-    <div class="info-column"><squarespace:block-field id="slideshowHero" columns="1"/></div>
-
+<div class="flex-center-center">
+    <div style="background: var(--blue); width: 85vw; padding: 25px">
+        <squarespace:block-field id="slideshowHero" columns="1"/>
+    </div>
 </div>
+
+<section id="slideshow">
+
 <div class="slideshow-container flex-start-center">
     <div id="container1" class="scrolling-container-wrapper">
         <div class="scrolling-container" id="scrollingContainer1">
