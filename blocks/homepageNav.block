@@ -14,7 +14,7 @@ footer a {font-size: 12px;}
 }
 </style>
 
-<div id="header-footer" class="flex-center-center flex-column" style="border: 2px solid red;">
+<div id="header-footer" class="flex-center-center flex-column">
         <nav id="desktop-nav-menu" class="nav-menu flex-center-center">
             <squarespace:navigation navigationId="siteNav" template="site-navigation" />
         </nav>

@@ -1,17 +1,15 @@
-
-
-    {.repeated section items}
-        <!-- collection link -->
-        {.section collection}
-        <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
-            {navigationTitle}
-        </a>
-        {.end}
-
-        <!-- external link -->
-        {.section externalLink}
-            <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
-            {title}
-            </a>
-        {.end}
+{.repeated section items}
+    <!-- collection link -->
+    {.section collection}
+    <a href="{fullUrl}" class="nav-item hover {.section active} active-link{.end}">
+        {navigationTitle}
+    </a>
     {.end}
+
+    <!-- external link -->
+    {.section externalLink}
+        <a href="{url}" class="nav-item" {.section newWindow} target="_blank"{.end}>
+        {title}
+        </a>
+    {.end}
+{.end}
