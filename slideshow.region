@@ -19,13 +19,7 @@
 }
 
 </style>
-<div class="slideshow-hero flex-center-center flex-column">
-    <squarespace:block-field id="slideshowHero" columns="1" style="min-width: 100px"/>
-    <div class="flex-center-center">
-        <squarespace:block-field id="aboutHero1" columns="1" style="min-width: 100px"/>
-        <squarespace:block-field id="aboutHero2" columns="1" style="min-width: 100px"/>
-    </div>
-</div>
+
 <div class="slideshow-container flex-start-center">
     <div id="container1" class="scrolling-container-wrapper">
         <div class="scrolling-container" id="scrollingContainer1">
