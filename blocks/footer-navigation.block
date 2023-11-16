@@ -1,6 +1,6 @@
 
 
-<div class="flex-center-center" style="font-size: 18px!important;">
+<div class="flex-center-center flex-wrap" style="font-size: 18px!important;">
 {.repeated section items}
     <!-- collection link -->
     {.section collection}
