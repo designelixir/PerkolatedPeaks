@@ -7,7 +7,7 @@
     {squarespace-headers}
   </head>
   <body id="{squarespace.page-id}" class="{squarespace.page-classes} sky-narrow">
-      {@|apply logoNavigation.block}
+      {@|apply globalNavigation.block}
       <div class="title-layer flex-center-center">
       {.section website}
           <h1 class="site-title-heading container-padding hover" data-content-field="site-title">{collection.title}</h1>
