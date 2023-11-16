@@ -1,7 +1,7 @@
 <style>
    .footer-logo {width: 200px; padding: 25px 25px 25px 0px;}
    .footer-nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 18px; color: white;}
-   footer {color: white; background-color: var(--blue); padding: 2vw;}
+   footer {color: white; background-color: var(--blue); padding: 2vw; border: 10px solid var(--cream);}
    #de-link {font-size: 12px;}
    
    .footer-top-wrapper {margin-bottom: 50px;}

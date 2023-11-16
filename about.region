@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/yye6qvk.css">
     {squarespace-headers}
   </head>
-  <body id="{squarespace.page-id}" class="{squarespace.page-classes} sky-narrow">
+  <body id="{squarespace.page-id}" class="{squarespace.page-classes}">
       {@|apply globalNavigation.block}
       <div class="title-layer flex-center-center">
       {.section website}
@@ -15,12 +15,13 @@
       </div>
 
       <main class="container-padding content-container" role="main" data-content-field="main-content">
-       <div class="flex-center-center info-columns">
-            <div><squarespace:block-field id="aboutHero1" columns="1" style="width: 100px; height: 100px; border: 1px solid green;"/></div>
-            <div><squarespace:block-field id="aboutHero2" columns="1" style="width: 100px; border: 1px solid green;"/></div>
-            <div><squarespace:block-field id="aboutHero2" columns="1" style="min-width: 100px; border: 1px solid green;"/></div>
+      {squarespace.main-content}
+       <div class="flex-start-center info-columns">
+            <div class="info-column"><squarespace:block-field id="aboutHero1" columns="1" /></div>
+            <div class="info-column"><squarespace:block-field id="aboutHero2" columns="1" style="width: 100px; border: 1px solid green;"/></div>
+            <div class="info-column"><squarespace:block-field id="aboutHero3" columns="1" style="min-width: 100px; border: 1px solid green;"/></div>
         </div>
-       {squarespace.main-content}
+       
        
       </main>
       
