@@ -6,7 +6,7 @@
    .footer-top-wrapper {margin-bottom: 50px;}
    #mapBlock {width: 50vw; margin-left: -100px; height: 100%;}
    .newsletter-container {background: #f4e9e4; max-height: 250px; margin-left: 25px; border: 10px solid white; border-radius: 10px;  }
-   .flower-piece-left {width: 115px; height: 100%; background-image: url('../assets/flower-piece.svg'); background-size: 100%;}
+   .flower-piece-left {width: 115px; height: 100%; background-image: url('assets/flower-piece.svg'); background-size: 100%;}
    .newsletter-form-header {border: 0px!important;}
    .newsletter-block .newsletter-form-button {font-family: "Europa", sans-serif;}
    .newsletter-block { margin: 0px!important; padding: 0px!important;}
