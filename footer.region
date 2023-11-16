@@ -1,9 +1,10 @@
 <style>
    .footer-logo {width: 200px; padding: 25px 25px 25px 0px;}
-   .footer-wrapper {background-image: url('assets/flower-border.png'); background-size: 100% 100%; width: 100%; height: 100%; padding: 2vw;}
+   .footer-wrapper { background-size: contain; width: 100%; height: 100%; padding: 2vw; margin-top: -100px;}
    .footer-nav-item {font-family: 'Mintello', serif; margin: 0px 10px; font-size: 18px; color: white;}
    footer {color: white; background-color: var(--blue);  border: 10px solid var(--cream);}
    #de-link {font-size: 12px;}
+   .flower-piece {background-image: url('assets/flower-piece.svg'); background-size: contain; width: 100%; height: 120px; }
    
    .footer-top-wrapper {margin-bottom: 50px;}
    #mapBlock {width: 50vw; margin-left: -100px; height: 100%;}
@@ -27,6 +28,7 @@
    }
 </style>
 <footer class="flex-center-center flex-column">
+    <div class="flower-piece"></div>
     <div class="footer-wrapper">
    <div class="footer-top-wrapper flex-center-spacebetween">
       <div class="flex-center-start footer-details" style="max-width: 550px;">
@@ -36,7 +38,7 @@
             <h2 id="businessTitle" style="margin: 0px;">{location.addressTitle}</h2>
             <p onclick="window.open('https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6')" class="hover">📍 {location.addressLine1},<br> {location.addressLine2}</p>
             <a  target="_blank" href="mailto:perkolatedpeaks@gmail.com">
-               <p class="hover">📧 {websiteSettings.contactEmail}</p>
+               <p class="hover">{websiteSettings.contactEmail}</p>
             </a>
             <br>
             <button onclick="window.open('https://maps.app.goo.gl/zYuTjG7DZ9hFLGWV6')" class="styled-button hover" style="margin-bottom: 15px;">Directions</button>
@@ -54,8 +56,9 @@
    <squarespace:navigation navigationId="footerNav" template="footer-navigation"/>
    <br>
    <div style="text-align: center">
-    <p>Copyright &copy; {location.addressTitle} 2023 </p>
+   <p>Copyright &copy; {location.addressTitle} 2023 </p>
     <a id="de-link" href="https://designelixir.studio" target="_blank"> Made with &hearts; by Design Elixir </a>
    </div>
    </div>
+   <div class="flower-piece" style="transform: rotate(180deg); margin-top: -80px"></div>
 </footer>
